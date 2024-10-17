@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+main {
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+    padding-left: 1em;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: .5em;
+    list-style: none;
+}
+.nav-menu-item a{
+    text-decoration: none;
+    color: #090909;
+}
+.hero-section{
+    background-image: url("/images/blog-image-hero.png");
+    background-size: contain;
+    color: white;
+    height: 100%;
+    padding: 2em 1em;
+}
+
+.article-date-hero{
+    font-weight: 100;
+}
+.article-title-hero{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.article-listing-title{
+    font-weight: 500px;
+    font-size: 1em;
+    font-style: bold;
+}
+.article-preview-hero{
+    font-weight: 100;
+}
+footer{
+    background-color: #202020;
+    color: #D7D7D7;
+    text-align: center;
+    padding: 1em;
+}
+.article-listing{
+    display: grid;
+    padding: .5em 1em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: .3em .6em;
+    margin-bottom: 0;
+    height: fit-content;
+}
+.article-listing-tile {
+  display: flex;
+  flex-direction: column;
+}
+.article-listing-image {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 500px){
+    
+    .article-listing{
+    display: grid;
+    padding: .5em 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: .3em .6em;
+}
+
+.recent-post-title {
+    margin: 0;
+    text-align: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+}
+
+/* Mobile Posts */
+.article-main{
+    padding: .5em 1em;
+}
+.recent-post{
+    padding: .5em 1em;
+}
+.recent-post-title{
+    text-align: center;
+}
